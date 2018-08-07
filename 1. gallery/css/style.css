@@ -1,41 +1,69 @@
-.dg-container{
-	width: 100%;
-	height: 450px;
-	position: relative;
-}
-
-.dg-wrapper{
-	width: 481px;
-	height: 316px;
-	margin: 0 auto;
+.dg-container {
+    width: 100%;
+    height: 450px;
     position: relative;
+    perspective: 800px;
 }
 
-.dg-wrapper a{
-	width: 482px;
-	height: 316px;
-	display: block;
-	position: absolute;
-	left: 0;
-	top: 0;
-	background: transparent url(../images/browser.png) no-repeat top left;
-	box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+.dg-wrapper {
+    width: 481px;
+    height: 316px;
+    margin: 0 auto;
+    position: relative;
+    transform-style: preserve-3d;
 }
 
-.dg-wrapper a img{
-	display: block;
-	padding: 41px 0px 0px 1px;
+.dg-wrapper a {
+    width: 482px;
+    height: 316px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: transparent url(../images/browser.png) no-repeat top left;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-.dg-wrapper a div{
-	font-style: italic;
-	text-align: center;
-	line-height: 50px;
-	text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
-	color: #333;
-	font-size: 16px;
-	width: 100%;
-	bottom: -55px;
-	display: none;
-	position: absolute;
+.dg-wrapper a img {
+    display: block;
+    padding: 41px 0px 0px 1px;
+}
+
+.dg-wrapper a div {
+    font-style: italic;
+    text-align: center;
+    line-height: 50px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+    color: #333;
+    font-size: 16px;
+    width: 100%;
+    bottom: -55px;
+    display: none;
+    position: absolute;
+}
+
+.dg-wrapper a:nth-child(1) {
+    transform: rotateY(45deg) translateZ(-240px);
+    margin-left: -200px;
+}
+
+.dg-wrapper a:nth-child(2) {
+    transform: rotateY(0deg);
+}
+
+.dg-wrapper a:nth-child(3) {
+    transform: rotateY(315deg) translateZ(-240px);
+    margin-left: 200px;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.site {
+    color: black;
+    font-family: Arial sans-serif;
+    font-style: italic;
+    font-size: 1.1rem;
 }
