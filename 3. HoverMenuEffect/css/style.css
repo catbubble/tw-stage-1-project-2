@@ -42,22 +42,27 @@
     font-style: italic;
     font-size: 28px;
     font-family: 'Alegreya SC', Georgia, serif;
+    transition: all 0.2s;
     /* tips: write your code here */
 }
 
 .mh-menu li:nth-child(1):hover span:nth-child(2) {
+    color: #ae3637;
     /* tips: write your code here */
 }
 
 .mh-menu li:nth-child(2):hover span:nth-child(2) {
+    color: #c3d243;
     /* tips: write your code here */
 }
 
 .mh-menu li:nth-child(3):hover span:nth-child(2) {
+    color: #d38439;
     /* tips: write your code here */
 }
 
 .mh-menu li:nth-child(4):hover span:nth-child(2) {
+    color: #8e7463;
     /* tips: write your code here */
 }
 
@@ -67,9 +72,12 @@
     left: 0px;
     top: 0px;
     opacity: 0;
+    transition: left 0.4s ease-in-out, opacity 0.6s ease-in-out;
     /* tips: write your code here */
 }
 
 .mh-menu li:hover img {
+    left: 300px;
+    opacity: 1;
     /* tips: write your code here */
 }
