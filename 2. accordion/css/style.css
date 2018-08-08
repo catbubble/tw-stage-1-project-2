@@ -60,6 +60,7 @@
     overflow: hidden;
     height: 0px;
     position: relative;
+    transition: height 0.5s;
     /* tips: write your code here */
 }
 
@@ -77,13 +78,16 @@
 }
 
 .ac-container input:checked ~ article.ac-small {
+    height: 140px;
     /* tips: write your code here*/
 }
 
 .ac-container input:checked ~ article.ac-medium {
+    height: 180px;
     /* tips: write your code here*/
 }
 
 .ac-container input:checked ~ article.ac-large {
+    height: 230px;
     /* tips: write your code here*/
 }
