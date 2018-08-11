@@ -2,7 +2,6 @@
     width: 100%;
     height: 450px;
     position: relative;
-    perspective: 800px;
 }
 
 .dg-wrapper {
@@ -10,6 +9,7 @@
     height: 316px;
     margin: 0 auto;
     position: relative;
+    perspective: 1000px;
     transform-style: preserve-3d;
 }
 
@@ -43,17 +43,18 @@
 }
 
 .dg-wrapper a:nth-child(1) {
-    transform: rotateY(45deg) translateZ(-240px);
-    margin-left: -200px;
+    transform: translateX(-250px) rotateY(45deg) translateZ(-120px);
+    /*margin-left: -200px; */
 }
 
 .dg-wrapper a:nth-child(2) {
     transform: rotateY(0deg);
+    /*z-index: 100;*/
 }
 
 .dg-wrapper a:nth-child(3) {
-    transform: rotateY(315deg) translateZ(-240px);
-    margin-left: 200px;
+    transform: translateX(250px) rotateY(-45deg) translateZ(-120px);
+    /*margin-left: 200px;*/
 }
 
 .footer {

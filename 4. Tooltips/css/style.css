@@ -67,7 +67,6 @@
     bottom: 100px;
     opacity: 0;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    transition: opacity 0.5s ease-in-out, bottom 0.5s;
 }
 
 .tt-wrapper li a span:before,
@@ -93,6 +92,7 @@
 .tt-wrapper li a:hover span {
     opacity: 1;
     bottom: 70px;
+    transition: opacity 0.5s ease-in-out, bottom 0.5s;
     /* tips: write your code here */
 }
 
